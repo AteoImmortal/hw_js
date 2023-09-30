@@ -1,185 +1,139 @@
 /* Задание 1 */
-// let nameUser = prompt('Введите ваше имя');
-// let age = prompt('Введите ваш возраст');
-// let city = prompt('Введите ваш город');
-// let phone = prompt('Введите ваш номер телфона');
-// let email = prompt('Введите ваш email');
-// let company = prompt('Введите ваше место работы');
-// let year = 2023 - age;
+// for(let i = 1; i <= 50; i++){
+//     console.log(i)
+// }
 
-
-// alert('Меня зовут ' + nameUser +'. Мне  ' + age + 'лет. Я проживаю в горде ' + city + 'и работаю в комании ' + company + '. Мои контактные данные: '+ phone +', ' + email + '.');
-
-
+// for(let i = 35; i >= 8; i--){
+//     console.log(i)
+// }
 
 
 /* Задание 2 */
-// alert(nameUser + ' родился в ' + year + ' году.')
-
+// let i = 89;
+// while(i >=11){
+//     document.write(`${i}<br>`);
+//     i--;
+// }
 
 
 
 /* Задание 3 */
-// let str = '123456';
-
-// let first = +str[0] + +str[1]; + +str[2];
-// let second = +str[3] + +str[4]; + +str[5];
-
-// if ( first === second){
-//     alert('Да')
-// } else {
-//     alert('Нет')
-// }
-
-
-
-/* Задание 4 */
-// let a = +prompt('Введие число');
-// if ( a > 0) {
-//     alert('Верно');
-// } else {
-//     alert('Неверно')
-// }
-
-
-
-/* Задание 5 */
-// let a = 10;
-// let b = 2;
-
-// let sum = a + b;
-// let diff = a - b;
-// let mult = a * b;
-// let div = a / b;
-
-// if( sum > 1 ){
-//     sum = sum**2
+// let sum = 0;
+// for(let i = 0; i <= 100; i++){
+//     sum += i;
 // }
 // console.log(sum)
 
 
 
-/* Задание 6 */
-// if (a > 2 && a < 11 || b >= 6 && b < 14) {
-//     console.log('Верно');
-// } else {
-//     console.log('Неверно');
+
+/* Задание 4 */
+// let num = 5;
+// let sum = 0;
+// for(let i = 0; i <= num; i++){
+//     sum = i + sum;
 // }
+// console.log(sum)
+
+/*Найдите сумму чисел в каждом числе от 1 до 5, например: в числе 3 сумма составляет 6
+(1+2+3)*/
+
+
+/* Задание 5 */
+// let num = 12;
+// for(let i = 8; i <= 56; i++){
+//     if(i % 2 == 0){
+//         console.log(i)
+//     }
+// }
+
+/*Выведите чётные числа от 8 до 56. Решить задание через while и for*/
+
+
+
+/* Задание 6 */
+// for(let a = 1; a <= 10; a++){
+//     for(let b = 1; b <= 10; b++){
+//         let mult = a * b
+//         console.log(`${a} * ${b} = ${mult}` )
+//     }
+// }
+
+/* Необходимо вывести на экран полную таблицу умножения (от 2 до 10) в виде:
+2*2 = 4
+2*3 = 6
+2*4 = 8
+2*5 = 10
+…
+3*1=3
+3*2=6
+3*3=9
+3*4=12
+…
+Для решения задачи используйте вложенные циклы*/
+
+
 
 
 
 /* Задание 7 */
-// let n = 24;
-// switch(true){
-//     case n >= 0 && n < 15:
-//         console.log('Первая четверть часа');
-//         break;
-//     case n >= 15 && n < 30:
-//         console.log('Вторая четверть часа');
-//         break;
-//     case n >= 30 && n < 45:
-//         console.log('Третья четверть часа');
-//         break;
-//     case n >= 45 && n <= 59:
-//         console.log('Четвёртая четверть часа');
-//         break;
-//     default: 
-//     console.log('Введите корректное число')
+// let n = 1000;
+// for(let i = 2; i >= 2; i++){
+//     n = n / i;
+//     if( n <= 50){
+//         console.log(`Получено число ${n}. Было совершено ${i} операций.`)
+//         i = 0;
+//     }
 // }
+
+/*Дано число n=1000. Делите его на 2 столько раз, пока результат деления не станет
+меньше 50. Какое число получится? Посчитайте количество итераций, необходимых
+для этого (итерация - это проход цикла), и запишите его в переменную num*/
 
 
 
 
 /* Задание 8 */
-// let day = 30;
 
-// switch (true) {
-//     case day > 0 && day <= 10:
-//         console.log('Первая декада месяца');
+// let a = 0;
+// let b = 0;
+
+// for(;;){
+//     let num = +prompt('введите число');
+
+//     if(isNaN(num)){
+//         alert('Ошибка! Ввели не число');
+//         continue;
+//     }
+
+//     if(num === 0 || num === null){        
 //         break;
-//     case day > 10 && day <= 20:
-//         console.log('Вторая декада месяца');
-//         break;
-//     case day > 20 && day <= 30:
-//         console.log('Третья декада месяца');
-//         break;
-//     default:
-//         console.log('Введите корректное число');
+//     }
+//     b = b + 1;
+//     a = a + num;
 // }
 
+// console.log(`Сумма чисел: ${a}`);
+// console.log(`Среднее арифметическое: ${a / b}`)
+/*Запустите цикл, в котором пользователю предлагается вводить число с клавиатуры, до
+тех пор, пока не будет введена пустая строка или 0. После выхода из цикла выведите
+общую сумму и среднее арифметическое введённых чисел. Если пользователь ввел не
+число, то вывести сообщение об ошибке ввода. При подсчете учесть, что пользователь
+может ввести отрицательное значение*/
 
 
 
-/* Задание 9 */
-// let day = 430;
-// let years;
-// let month;
-// let week;
-// let hour;
-// let minutes;
-// let second;
+/* Задание 9 */ // Не решил
+// let num = str.split(' ');
+// console.log(num)
 
-// if(day >= 365) {
-//     years = day / 365;
-//     console.log(years + ' лет/год');
-// } else {
-//     console.log('меньше года');
+// for(let i = 0; i <= str.length; i++){
+//     if(num[i] == undefined){
+//         i = i - 1
+//         break
+//     }
+
 // }
 
-// if(day >= 31) {
-//     month = day / 31;
-//     console.log(month + ' месяцев');
-// } else {
-//     console.log('меньше месяца');
-// }
-
-// if(day >= 7) {
-//     week = day / 7;
-//     console.log(week + ' недель');
-// } else {
-//     console.log('меньше недели');
-// }
-
-// if(day >= 1) {
-//     hour = day * 24;
-//     console.log(hour + ' часов');
-// } else {
-//     console.log('0 часов');
-// }
-
-// if (day >= 1) {
-//     minutes = hour * 60;
-//     console.log(minutes + ' минуты');
-// } else {
-//     console.log('0 минут');
-// }
-
-// if (day >= 1) {
-//     second = minutes * 60;
-//     console.log(second + ' секунды');
-// } else {
-//     console.log('0 cекунд');
-// }
-
-
-
-/* Задание 10 */
-// let day = 249;
-// let month = day / 31;
-
-// switch(true) {
-//     case month >= 0 && month <= 1 || month > 10 && month <= 11:
-//         console.log('зима');
-//         break;
-//     case month > 1 && month <= 4:
-//         console.log('весна');
-//         break;
-//     case month > 4 && month <= 7:
-//         console.log('лето');
-//         break;
-//     case month > 7 && month <= 10:
-//             console.log('осень');
-//             break;
-//     default:
-//         console.log('Введите корректное число');
-// }
+/*Дана строка с числами разделенными пробелами «4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36
+8 57». Найдите самое большое и самое маленькое число в строке, используя цикл.*/
