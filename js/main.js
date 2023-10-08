@@ -99,3 +99,15 @@
 // console.log(newArr)
 
 
+
+/* Задача 9 */
+// const arr = [];
+// function newArr(arr){
+//     arr.push(0)
+//     arr.push(1)
+//     for(let i = 2; i <= 1000; i++){
+//         arr.push(arr[i-1] + arr[i-2])
+//     }
+//     return arr
+// }
+// console.log(newArr(arr))
