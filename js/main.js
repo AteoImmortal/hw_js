@@ -1,139 +1,101 @@
-/* Задание 1 */
-// for(let i = 1; i <= 50; i++){
-//     console.log(i)
+/* Задача 1 */
+// let a = 10;
+// let b = 4;
+// let c = 2
+// function sum(a, b, c){
+//     return (a - b) / c 
 // }
-
-// for(let i = 35; i >= 8; i--){
-//     console.log(i)
-// }
-
-
-/* Задание 2 */
-// let i = 89;
-// while(i >=11){
-//     document.write(`${i}<br>`);
-//     i--;
-// }
+// let result = sum(a, b, c)
+// console.log(result)
 
 
 
-/* Задание 3 */
-// let sum = 0;
-// for(let i = 0; i <= 100; i++){
-//     sum += i;
-// }
-// console.log(sum)
-
-
-
-
-/* Задание 4 */
-// let num = 5;
-// let sum = 0;
-// for(let i = 0; i <= num; i++){
-//     sum = i + sum;
-// }
-// console.log(sum)
-
-/*Найдите сумму чисел в каждом числе от 1 до 5, например: в числе 3 сумма составляет 6
-(1+2+3)*/
-
-
-/* Задание 5 */
-// let num = 12;
-// for(let i = 8; i <= 56; i++){
-//     if(i % 2 == 0){
-//         console.log(i)
+/* Задача 2 */
+// let a = 2;
+// function squareCube(a){
+//     let square = a**2;
+//     let cube = a**3;
+//     return {
+//         square: square,
+//         cube: cube
 //     }
 // }
+// let result = squareCube(a);
+// console.log(`Квадрат числа : ${result.square}; Куб числа: ${result.cube}`)
 
-/*Выведите чётные числа от 8 до 56. Решить задание через while и for*/
 
 
-
-/* Задание 6 */
-// for(let a = 1; a <= 10; a++){
-//     for(let b = 1; b <= 10; b++){
-//         let mult = a * b
-//         console.log(`${a} * ${b} = ${mult}` )
+/* Задача 3 */
+// const a = 13;
+// const b = 9;
+// function minMax(a, b){
+//     if(a > b){
+//         return {
+//             max: a,
+//             min: b
+//         }
+//     } else if(a < b){
+//         return {
+//             max: b,
+//             min: a
+//         }
+//     } else {
+//         return {
+//             max: error,
+//             min: error
+//         }
 //     }
 // }
-
-/* Необходимо вывести на экран полную таблицу умножения (от 2 до 10) в виде:
-2*2 = 4
-2*3 = 6
-2*4 = 8
-2*5 = 10
-…
-3*1=3
-3*2=6
-3*3=9
-3*4=12
-…
-Для решения задачи используйте вложенные циклы*/
+// const result = minMax(a, b);
+// console.log(`Минимальное число: ${result.min}`);
+// console.log(`Максимальное число: ${result.max}`)
 
 
 
-
-
-/* Задание 7 */
-// let n = 1000;
-// for(let i = 2; i >= 2; i++){
-//     n = n / i;
-//     if( n <= 50){
-//         console.log(`Получено число ${n}. Было совершено ${i} операций.`)
-//         i = 0;
-//     }
-// }
-
-/*Дано число n=1000. Делите его на 2 столько раз, пока результат деления не станет
-меньше 50. Какое число получится? Посчитайте количество итераций, необходимых
-для этого (итерация - это проход цикла), и запишите его в переменную num*/
-
-
-
-
-/* Задание 8 */
-
-// let a = 0;
-// let b = 0;
+/* Задача 4 *
+// const arr = [];
 
 // for(;;){
-//     let num = +prompt('введите число');
-
-//     if(isNaN(num)){
-//         alert('Ошибка! Ввели не число');
-//         continue;
-//     }
-
-//     if(num === 0 || num === null){        
-//         break;
-//     }
-//     b = b + 1;
-//     a = a + num;
-// }
-
-// console.log(`Сумма чисел: ${a}`);
-// console.log(`Среднее арифметическое: ${a / b}`)
-/*Запустите цикл, в котором пользователю предлагается вводить число с клавиатуры, до
-тех пор, пока не будет введена пустая строка или 0. После выхода из цикла выведите
-общую сумму и среднее арифметическое введённых чисел. Если пользователь ввел не
-число, то вывести сообщение об ошибке ввода. При подсчете учесть, что пользователь
-может ввести отрицательное значение*/
-
-
-
-/* Задание 9 */ // Не решил
-// let num = str.split(' ');
-// console.log(num)
-
-// for(let i = 0; i <= str.length; i++){
-//     if(num[i] == undefined){
-//         i = i - 1
+//     let numbers = +prompt('Введите число');
+//     if( numbers === false || numbers == ' '){
 //         break
+//     } else {
+//         arr.push(numbers);
 //     }
+// }
+// console.log(arr)
 
+
+
+
+/* Задача 5 */
+// const a = 12;
+// function isEven(a){
+//     if(a % 2 === 0){
+//         return true
+//     } else {
+//         return false
+//     }
 // }
 
-/*Дана строка с числами разделенными пробелами «4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36
-8 57». Найдите самое большое и самое маленькое число в строке, используя цикл.*/
+// console.log(isEven(a))
+
+
+
+
+/* Задача 6 */
+// const arr = [2, 5, 7, 1, 3, 4, 8]
+// const newArr = []
+// function isEven(arr, newArr){
+
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0){
+//             newArr.push(arr[i])
+//         }
+//     }
+//     return newArr
+// }
+// isEven(arr, newArr)
+// console.log(newArr)
+
+
